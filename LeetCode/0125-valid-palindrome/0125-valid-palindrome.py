@@ -1,14 +1,14 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
+        Deque = collections.deque()
         s = s.lower()
-        s_list = [i for i in s if i.isalnum()]
+        strs: Deque = collections.deque()
 
-        while len(s_list) > 1:
-            first = s_list.pop(0)
-            last = s_list.pop()
-            if first == last:
-                continue
-            else:
+        for char in s:
+            if char.isalnum():
+                strs.append(char)
+
+        while len(strs) > 1:
+            if strs.popleft() != strs.pop():
                 return False
-
         return True
