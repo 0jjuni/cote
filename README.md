@@ -1,2 +1,4 @@
-# Baekjoon
-This is an auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
+# 알고리즘 공부
+이 저장소는 LeetCode와 프로그래머스에서 푼 코딩 테스트 문제들을 자동으로 업로드하는 공간입니다.
+주요 사용 언어: Python, SQL
+문제별로 코드가 정리되어 있으며, 꾸준히 업데이트됩니다.
