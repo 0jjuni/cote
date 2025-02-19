@@ -31,6 +31,5 @@ class Solution:
             head = rev
         else:
             first_bound_start.next = rev
-            #head.next = first_bound_start
 
         return head
