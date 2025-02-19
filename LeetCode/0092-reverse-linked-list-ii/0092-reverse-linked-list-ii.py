@@ -9,22 +9,21 @@ class Solution:
         left_before, rev_finish= None, None
         rev = None
 
-        if left >= 2:
+        if left == 1:
+            left_before = head
+            rev_finish = head            
+        else:
             for _ in range(left-2):
                 cur = cur.next
             left_before = cur
             cur = cur.next
             rev_finish = cur
-        else:
-            left_before = head
-            rev_finish = head
 
         for i in range(right-left+1):
             rev, rev.next, cur = cur, rev, cur.next
 
         if cur:
             rev_finish.next = cur
-
 
         if left == 1:
             head = rev
