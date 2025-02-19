@@ -9,7 +9,7 @@ class Solution:
 
             if i in static_set:
                 continue
-            while stack and (count[stack[-1]] > 0 and i < stack[-1]):
+            while stack and count[stack[-1]] > 0 and i < stack[-1]:
                 
                 static_set.remove(stack.pop())
 
